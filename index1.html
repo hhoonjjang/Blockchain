@@ -1,0 +1,149 @@
+<!--8/16일 마진과 보더와 패딩에 대한 개념을 배웠다.
+    HTML -> HyperText Markup Language
+
+    Tag, Tag 이름 -> html, head, meta, body, div, 
+    <***> -> 여는 태그
+    </***> -> 닫는 태그
+    여는 태그가 있으면 닫는 태그가 있어야함
+    Element << Javascript 에서 다시
+    여는 태그와 닫는 태그 사이에 자식 태그들이 있다.
+    자식태그 -> 부모 태그
+-->
+
+<html lang="ko">
+  <!-- html 태그 = HTML 파일의 시작.
+    속성 : Tag 에 대한 설정, lang 
+    lang -> 언어 설정 en = > English , ko = 한글
+    -->
+  <head>
+    <!--
+        head: 브라우저에 여러가지 정보들을 전달
+        보통 페이지상에 안보임
+        Tag중에 바로 닫기, <***/>
+        자식이 없을때 사용 -> meta, img, input,
+    -->
+    <meta charset="UTF-8" />
+    <!--
+        메타데이터, 기본 정보를 전달
+        charset : 언어가 어떤 포멧인지 형식, UTF- 8 유니코드
+        
+    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--
+        http-equiv : 웹사이트가 어떤 호환성을 갖고있는지 Javascript 를 어디까지 사용할 수 있냐?
+        content : 어떤 정보인지 -> IE=edge << Internet explorer의 버전이 edge
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+        name : 어떤 설정, viewport 라는 이름을 갖고있다 < 화면에 대한 내용
+        viewport: 카메라, 너비의 정도, 줌(확대)에 대한 얘기
+        width = device-width <<웹페이지의 너비를 브라우저 or 스마트폰의 너비에 맞춘다.
+        initial-scale = 1.0 << 기본확대가 1.0
+        maximum-scale, minimum-scale << 최대 최소
+
+    -->
+    <title>사이트이름</title>
+    <!--
+        title: 웹페이지 이름, 사이트 이름
+
+        link, script, style
+    -->
+  </head>
+  <body>
+    <div>
+      <p>
+        ㅁㄴㅇㄴㅁㅇㄴㅁㅇㅁㄴㅇㄴㅁㅇㄴㅁㅇㅁㄴㅇㄴㅁㅇㄴㅁㅇㅁㄴㅇㄴㅁㅇㄴㅁㅇㅁㄴㅇㄴㅁㅇㄴㅁㅇㅁㄴㅇㄴㅁㅇㄴㅁㅇ
+      </p>
+      <p>단락, paragrapth 단어이 약자, 블록화<br />br은 줄바꿈</p>
+      <span
+        >p랑 거의 유사 인라인 속성을 갖고있다. <br />
+        블록화와 대비된다.
+      </span>
+      <pre>
+        <h1>대제목</h1>
+        <h2>제목</h2>
+        <h3>제목</h3>
+        <h4>제목</h4>
+        <h5>제목</h5>
+        <h6>제목</h6>
+p나 span과 같다.
+        결정적 차이는 쓴데로 나옴.
+      </pre>
+      <h1>대제목</h1>
+      <h2>제목</h2>
+      <h3>제목</h3>
+      <h4>제목</h4>
+      <h5>제목</h5>
+      <h6>제목</h6>
+    </div>
+    <div style="padding 100px;background-color: blueviolet;">
+      <img style="height:204px;" src="544170_1641700102031_5243.jpg" alt="하이" />
+      <img style="width:204px;height:204px;margin-top: 10px;margin-left: 150px;margin-bottom: 10px;"
+        src="data:image/jpeg;base64,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"
+        alt=" "/>
+    
+      <!-- 
+            image, 
+            src = source => 이미지의 주소, 파일명
+            alt = 이미지를 정상적으로 받지 못했을떄 뜨는 경고 이름.
+            ./ << 현재 위치
+        -->
+    </div>
+    <div>
+        <p>
+        
+            <strong>굵은 글씨 강조, 긴급한 내용, 알람?</strong>
+            <b>그냥 굵은 글씨, 나중에 css에서 알 수 있다</b>
+            <del> 삭제한 내용, 그 글을 관리자는 확인 가능해야함<br /></del>
+            <ins>
+              insert 입력한 내용, <br />늘어난 내용 게시판, 신규 작성글 수정등등
+            </ins>
+            4<sub>3 영어단어</sub> 2<sup>3</sup>
+            <i><br />둘다 기울기, 이름과 제목 인용 <br /></i>
+            <em>둘다 기울기,강조 = strong</em>
+          </p>
+      style: 속성, 대그의 크기, 외곽선, 위치 배경등을 설정한다. 기초적인(원초)
+      방법<br />
+      CSS 파일, Cascading Style Sheets로 HTML 파일 외부로 뺌.
+      <div style="width: 100%">
+        너비, 높이 숫자 이용한 수치들에 대한 단위 :px, %,em,rem,vw,vh
+        <br />
+        em : 글씨 크기를 기준으로 한다, 부모의 글씨 크기를 <br />
+        rem : 글씨 크기를 기준으로 한다 모바일, pc 한번에 만들떄 자주 사용한다
+      </div>
+      <p>
+        vw, vh : viewport, 브라우저의 크기나 스마트폰의 크기를 기준으로 %,
+        <br />
+        100vw는 화면의 너비, 100 vh 화면의 높이
+      </p>
+    </div>
+    <div>
+      <div style="max-width: 1000px; min-width: 100px">
+        width : 영역의 너비를 max-width : 영역의 최대 너비를 min-width : 영역의
+        최소 너비를 1000px 이상 넘어가면 안될때 max-width
+      </div>
+      <div style="height: 100px">
+        max-height,min-height 거의 쓸일 없는데 이미지 조절할때
+      </div>
+      <div
+        style="width: 100px; height: 100px;background-color: rgb(200, 200, 200);padding: 10px;box-sizing:border-box">
+        <!--
+        padding : 내부 여백, 내부에 얼마나 빈공간을 줄것인지
+      -->
+        <div style="height: 100%; background-color: rgb(255, 0, 0)"></div>
+      </div>
+    </div>
+    <div style="width: 100px;height: 200px;background-color: rgb(0, 200, 0);padding-top: 30px;">
+      <!--
+      padding : 내부 여백, 내부에 얼마나 빈공간을 줄것인지
+      margin : 외부여백 공간을 준다.
+    -->
+      <div style="width:100%; height:100px; background-color: rgb(255, 0, 0);margin-top: 50px; margin-left: 50px;"></div>
+    </div>
+
+    <div style="box-sizing:border-box">
+    </div>
+
+    </div>
+  </body>
+</html>
