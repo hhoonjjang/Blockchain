@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        index.html 이라고 파일을 만드는 이유: 서버에서 사용하는 규칙이다.
+    -->
+    <table style="border-collapse: collapse">
+      <!--표를 출력하는 부모 태그-->
+      <caption>
+        테이블 이름
+      </caption>
+      <col style="width: 50px" />
+      <col style="width: 150px" />
+      <col style="width: 50px" />
+      <col style="width: 50px" />
+      <colgroup span="2" style="width: 80px"></colgroup>
+      <!-- column의 줄임말,열,세로줄
+    col은 테이블의 열의 스타일을 공통적으로 정의한다. 단 하나의 열씩-->
+      <thead>
+        <!-- table head, 테이블 제일 위 목록? row,행 -->
+        <tr>
+          <!-- tr은 table row,행, 가로줄이다-->
+          <!-- 테이블의 헤드의 셀(아이템)이다 -->
+          <th style="border: 1px solid black">번호</th>
+          <th style="border: 1px solid black">이름</th>
+          <th style="border: 1px solid black">나이</th>
+          <th style="border: 1px solid black">성별</th>
+          <th style="border: 1px solid black">국적</th>
+          <th style="border: 1px solid black">출석</th>
+          <th style="border: 1px solid black">마스크유무</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 테이블릐 목록(내용이다.) -->
+        <tr>
+          <td style="border: 1px solid black">
+            <!-- 테이블의 내용을 담은 셀이다. table data -->
+            1
+          </td>
+          <td style="border: 1px solid black">정재훈</td>
+          <td style="border: 1px solid black">30</td>
+          <td style="border: 1px solid black">남</td>
+          <td style="border: 1px solid black">한국</td>
+          <td style="border: 1px solid black">o</td>
+          <td rowspan="2" style="border: 1px solid black">o</td>
+          <!-- rowspan 세로 줄을 수만큼 합친다. 행합침 -->
+        </tr>
+        <tr>
+          <td style="border: 1px solid black">2</td>
+          <td style="border: 1px solid black">김성진</td>
+          <td style="border: 1px solid black">27</td>
+          <td style="border: 1px solid black">남</td>
+          <td style="border: 1px solid black">한국</td>
+          <td style="border: 1px solid black">o</td>
+
+          <!-- border 값은 외곽선을 설정한다.
+        순서는 -> 굵기 선형 색상
+    solid는 그냥 선이다. -->
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2" style="border: 1px solid black">총원</td>
+          <td style="border: 1px solid black">2</td>
+          <td colspan="2" style="border: 1px solid black">출석</td>
+          <td style="border: 1px solid black">2</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
