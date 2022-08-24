@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <a href="https://www.naver.com/">
+      <div>네이버</div>
+    </a>
+
+    <!-- a 태그는 링크다
+        style을 사용하지않는다
+        자식으로 스타일을 설정한다.
+        href 속성 이동할 주소다. 서버 웹페이지 이동시-->
+
+    <a href="https://www.youtube.com/" target="_blank">유튜브</a>
+    <!-- target 속성은 웹페이지를 어떻게 이동할 것인가
+    -blank 값을 설정하면 새탭으로 이동 -->
+
+    <video src="ì_¤ë_¼ì__ë__ - 128485.mp4" controls autoplay loop muted></video>
+    <!--
+        속성 controls 컨트롤박스로 사용
+        autoplays 속성은 영상이 로드 시 재생.단점 웹페이지를 들어갔을 떄 오디오가 바로 나오면 안되는게 권장사항이다.
+        ios는 권장사항 준수하기떄문에 자동재생이 안됌.
+        autoplay loop 반복자동재생
+        autoplay loop muted 음소거 ios에서 중요
+        vdeio태그는 영상출력하기위해 사용함. src에 주소입력 서버에서 설명 현재:파일명을 입력한다 폴더경로와 파일명을 입력 -->
+    <iframe
+      width="895"
+      height="500"
+      src="https://www.youtube.com/embed/uzH3A5ujC7E"
+      title="[바로간다] 집집마다 악취와의 전쟁‥'30억 강남 아파트'에 무슨 일? (2022.08.22/뉴스데스크/MBC)"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <audio src="goldn-116392.mp3" controls="false"></audio>
+    <!-- 깡 autoplay 강제 브금 
+    audio 태그는 음악을 재생하는 태그 속성은 =video
+태그의 속성은 이름만 넣을 경우 값을 true 설정한다. <<boolean-->
+  </body>
+</html>

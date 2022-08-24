@@ -1,0 +1,323 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이력서</title>
+    <style>
+      .boxS {
+        width: fit-content;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* background-color: blue; */
+      }
+
+      .line {
+        border: 1px solid black;
+      }
+      .line1 {
+        border: 1px solid black;
+        background-color: lightgray;
+      }
+      .line2 {
+        border: 1px solid black;
+        text-align: center;
+      }
+      .colla {
+        border-collapse: collapse;
+      }
+      .dLline {
+        border-left: 0px;
+      }
+      .dRline {
+        border-right: 0px;
+      }
+      .MStyle {
+        border: 1px solid black;
+        padding-left: 10px;
+      }
+      .Width1 {
+        text-align: center;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .child {
+        width: 100%;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <자기정보> -->
+    <div class="boxS" style="margin: auto">
+      <div>
+        <table class="colla">
+          <caption>
+            <h1>이력서</h1>
+          </caption>
+          <thead>
+            <tr></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="5">
+                <img
+                  src="증명사진.jpg"
+                  alt=""
+                  style="
+                    margin-right: 10px;
+                    border: 1px solid black;
+                    height: 240px;
+                  "
+                />
+              </td>
+              <th class="line1 dLline">성명</th>
+              <td class="line" style="padding-left: 10px">정재훈</td>
+              <th class="line1">영문</th>
+              <td class="line" style="padding-left: 10; padding-right: 10px">
+                Jaehoon Jung
+              </td>
+              <th class="line1">한문</th>
+              <td class="line2 dRline" style="padding-left: 10">鄭載勳</td>
+            </tr>
+            <tr>
+              <th class="line1 dLline">생년월일</th>
+              <td class="MStyle" colspan="3">1993년 7월 27일</td>
+              <th class="line1">나이(만)</th>
+              <td class="line2 dRline">29</td>
+            </tr>
+            <tr>
+              <th class="line1 dLline">휴대폰</th>
+              <td class="MStyle" style="padding-right: 40px">010-7327-6503</td>
+              <th class="line1">전화번호</th>
+              <td class="Mstyle" colspan="3" style="border-right: 0px">
+                02-553-6503
+              </td>
+            </tr>
+            <tr>
+              <th class="line1 dLline">이메일</th>
+              <td class="MStyle" colspan="5" style="border-right: 0px">
+                hhoonjjang@gmail.com
+              </td>
+            </tr>
+            <tr>
+              <th class="line1 dLline">주소</th>
+              <td class="Mstyle" colspan="5" style="border-right: 0px">
+                서울 강남구 삼성로 212
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- 보훈대상자 -->
+      <div>
+        <table class="child colla">
+          <thead>
+            <tr>
+              <th class="line1 dLline Width1">보훈대상자</th>
+              <td class="line2" style="padding-left: 10px; padding-right: 10px">
+                해당 □ 해당없음 ■
+              </td>
+              <th class="line1 Width1">장애여부</th>
+              <td
+                class="line2"
+                style="
+                  border-right: 0px;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                "
+              >
+                해당 □ 해당없음 ■
+              </td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <!-- 학력사항 -->
+      <div>
+        <table class="child colla">
+          <thead>
+            <tr>
+              <td class="line1 dLline dRline" colspan="5">
+                <b>학력사항</b> (최종학력: 한성대학교 졸업)
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="line dLline">재학기간</th>
+              <th class="line">학교 및 전공</th>
+              <th class="line">학점</th>
+              <th class="line">구분</th>
+              <th class="line dRline">소재지</th>
+            </tr>
+            <tr>
+              <td class="line2 dLline">2013.03~2022.02</td>
+              <td class="line2">한성대학교 컴퓨터공학과</td>
+              <td class="line2">3.5/4.5</td>
+              <td class="line2">야간</td>
+              <td class="line2 dRline">서울</td>
+            </tr>
+            <tr>
+              <td class="line2 dLline">2010.03~2012.02</td>
+              <td class="line2">휘문고등학교</td>
+              <td class="line2"></td>
+              <td class="line2">이공계</td>
+              <td class="line2 dRline">서울</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- 자격증 -->
+      <div>
+        <table class="colla child">
+          <thead>
+            <tr>
+              <td class="line1 dLline dRline" colspan="4">
+                <b>자격증</b>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="line dLline">취득일</th>
+              <th class="line">자격증/면허증</th>
+              <th class="line">등급</th>
+              <th class="line dRline">발행처</th>
+            </tr>
+            <tr>
+              <td class="line2 dLline">2014.07</td>
+              <td class="line2">전자기기기능사</td>
+              <td class="line2"></td>
+              <td class="line2 dRline">한국산업인력공단</td>
+            </tr>
+            <tr>
+              <td class="line2 dLline">2016.03</td>
+              <td class="line2">운전면허증</td>
+              <td class="line2">2종보통</td>
+              <td class="line2 dRline"></td>
+            </tr>
+            <tr>
+              <td class="line2 dLline">2019.05</td>
+              <td class="line2">ITQ정보기술자격</td>
+              <td class="line2"></td>
+              <td class="line2 dRline">한국생산성본부</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- 주요활동 및 경력 -->
+      <div>
+        <table class="colla child">
+          <thead>
+            <tr>
+              <td class="line1 dLline dRline" colspan="4">
+                <b>주요활동 및 경력</b>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="line2 dLline">기간</th>
+              <th class="line2">활동내용</th>
+              <th class="line2">활동구분</th>
+              <th class="line2 dRline">기관명/업체명</th>
+            </tr>
+            <tr>
+              <td class="line2 dLline">2019. 06. 17 ~ 2019. 07. 12</td>
+              <td class="line2">지진계 설치 및 유지 보수</td>
+              <td class="line2">실습</td>
+              <td class="line2 dRline">우송기술</td>
+            </tr>
+            <tr>
+              <td class="line2 dLline">2018. 12. 10 ~ 2019. 02. 03</td>
+              <td class="line2">서빙 및 손님 대응</td>
+              <td class="line2">아르바이트</td>
+              <td class="line2 dRline">롯데리아</td>
+            </tr>
+            <tr>
+              <td class="line2 dLline">　</td>
+              <td class="line2">　</td>
+              <td class="line2">　</td>
+              <td class="line2 dRline">　</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- 능력사항 -->
+      <div>
+        <table class="colla child">
+          <thead>
+            <td class="line1 dLline dRline" colspan="6">
+              <b>능력사항</b>
+            </td>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="line2 dLline" rowspan="3">Qa능력</th>
+              <th class="line2">워드/한글</th>
+              <th class="line2">상 □ / 중 ■ / 하□</th>
+              <th class="line2" rowspan="3">어학능력</th>
+              <th class="line2">영어</th>
+              <th class="line2 dRline">상 □ / 중 ■ / 하□</th>
+            </tr>
+            <tr>
+              <th class="line2">엑셀</th>
+              <th class="line2">상 □ / 중 ■ / 하□</th>
+              <th class="line2">일본어</th>
+              <th class="line2 dRline">상 □ / 중 □ / 하□</th>
+            </tr>
+            <tr>
+              <th class="line2">파워포인트</th>
+              <th class="line2">상 □ / 중 ■ / 하□</th>
+              <th class="line2">기타( )</th>
+              <th class="line2 dRline">상 □ / 중 □ / 하□</th>
+            </tr>
+          </tbody>
+          <!-- 병역사항 -->
+          <table class="colla child">
+            <thead>
+              <tr>
+                <td class="line1 dLline dRline" colspan="5">
+                  <b>병역사항</b>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="line2 dLline">복무기간</th>
+                <th class="line2">군별</th>
+                <th class="line2">계급</th>
+                <th class="line2">병과</th>
+                <th class="line2 dRline">전역사유</th>
+              </tr>
+              <tr>
+                <td class="line2 dLline">2014. 02 ~ 2015. 11</td>
+                <td class="line2">육군</td>
+                <td class="line2">병장</td>
+                <td class="line2">통신</td>
+                <td class="line2 dRline">만기</td>
+              </tr>
+            </tbody>
+          </table>
+        </table>
+      </div>
+      <!-- 나머지 -->
+      <div>
+        <table style="width: 100%">
+          <thead></thead>
+        </table>
+      </div>
+
+      <div>
+        <p style="text-align: right">
+          위에 기재한 사항은 사실과 틀림이 없습니다.<br /><br />
+          <b>2022년 08월 23일</b><br /><br />
+          <b>성 명: 정 재 훈(인)</b>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

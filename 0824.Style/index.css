@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+}
+.display {
+  display: block;
+  /* 블록 옆에 x */
+  display: inline;
+  /* 인라인, span, a 등등의 기본값(block) 옆에 붙여줌. 자기가 가져야하는 영약만 가짐(width,height 등등 무시*/
+  display: none;
+  /* 출력 x */
+  display: flex;
+  /* flex 박스의 부모, flex 박스라고한다. */
+  display: grid;
+  /* 그리드 박스의 부모다, 그리드 박스라고함 */
+  display: inherit;
+  /* 부모한테 받는다. 부모의 값을 가져와서 나한테 설정한다. */
+  display: initial;
+  /* 기본값을 설정한다 */
+  display: unset;
+  /* 부모값을 확인해서 있으면 가져오고 없으면 기본값을 설정한다. */
+  /* 사용량 flex > block > none>>>>> grid >>>>>>>>>>나머지 */
+}
+.wh {
+  width: 100px;
+  height: 100px;
+  width: fit-content;
+  width: min-content;
+  width: max-content;
+  /* 너비와 높이
+단위는 px,%,em,rem,vw,vh 를 많이 사용함 
+fit-content는 갖고있는 만큼 차지
+max-content는 갖고있는 최대를 차지
+min-content 는 갖고있는 최소를 차지*/
+}
+.fit-content {
+  width: fit-content;
+}
+.min-content {
+  width: min-content;
+  overflow: hidden;
+  /* overflow는 넘쳤을때 처리하는 방법 */
+  overflow: auto;
+  overflow: scroll;
+  overflow: visible;
+}
+.max-content {
+  width: max-content;
+}
+.ofh {
+  overflow: hidden;
+}
+.text {
+  font-size: 16px;
+  /* pc 크롬기준 기본값 16px 
+    모바일,pc,브라우저에 따라 달라질수있다.*/
+  font-weight: 500;
+  /* 글씨의 굵기다 */
+  /* 기본값은 500이고 글꼴을 따라간다.<<글꼴에서 지원하지 않는 굵기는 무시 */
+  font-style: normal;
+  color: #ff0000;
+  /*color는 글씨색
+    rgb(),rgba(),#,hcl, etc 설정이 가능하다.  
+    red, green,blue,alpha의 약자
+    #은 16진수로 설정한다.
+    */
+  text-align: center;
+  text-align: end;
+  text-align: start;
+  text-align: justify;
+  /* 균등 정렬 */
+  text-decoration: dashed line-through black;
+  /* 데코레이션 텍스트에 줄긋기 */
+  text-decoration: none;
+  /* a 태그 사용할 때 밑줄 없애기 */
+  letter-spacing: 10px;
+  /* 글자간격 */
+}
