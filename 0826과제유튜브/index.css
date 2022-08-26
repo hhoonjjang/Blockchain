@@ -103,3 +103,47 @@
   margin-left: 20px;
   border: 1px solid black;
 }
+
+.mainbody {
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+}
+
+.flexBox {
+  width: 100%;
+}
+
+.categorybar {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  min-width: 600px;
+  right: 0;
+}
+.categorybar .text {
+  border: 1px solid black;
+  margin: 10;
+  /* min-width: fit-content; */
+  /* min-width: fit-content; */
+  /* text-align: center; */
+}
+
+.videobar {
+  width: calc(100%-240px);
+  background-color: blue;
+}
+
+.videobar-shorts {
+  background-color: green;
+}
+
+.video-normal {
+}
+
+.videobar-popular {
+  background-color: brown;
+}
+
+.videobar-infinite {
+}
