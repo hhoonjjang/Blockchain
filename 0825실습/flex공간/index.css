@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.mainMenu {
+  margin: auto;
+  text-align: center;
+  /* width: 840px;
+  height: 1100px; */
+  max-width: 1500px;
+  min-width: 860px;
+  background-position: center;
+  background-size: contain;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("다운로드 (1).jpg");
+
+  background-repeat: no-repeat;
+  border: 10px double black;
+  /* position: relative;
+  top: 20;
+  left: 50; */
+}
+
+.positionTitle {
+  /* height: 300px; */
+
+  font-weight: 700;
+
+  /* position: relative; */
+  border-bottom: 1px dotted black;
+}
+
+.mainTitleText {
+  font-size: 100px;
+  font-style: italic;
+  /* position: relative; */
+  top: 30;
+}
+
+.textS1 {
+  font-size: 40px;
+}
+
+.textWhite {
+  font-size: 20px;
+  margin-top: 10;
+  color: red;
+  /* position: relative; */
+  top: 40;
+}
+
+.menuFlex {
+  text-align: start;
+  width: 99%;
+  height: 790;
+  display: flex;
+  border: 5px solid pink;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menuItem {
+  width: 400;
+  height: 250;
+  border: 3px solid black;
+  display: flex;
+  padding: 10 10;
+  align-items: center;
+}
+
+.imageItem {
+  width: 40%;
+  height: 90%;
+}
+
+.food-subname {
+  font-size: 15;
+  font-weight: 700;
+  padding-bottom: 40;
+}
+.food-info {
+  padding-bottom: 30;
+}
+
+.food-price {
+  font-size: 30;
+  color: red;
+}

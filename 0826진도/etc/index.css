@@ -1,0 +1,51 @@
+.etc {
+  background-color: black;
+  color: red;
+  width: 1000px;
+  min-height: 100px;
+  font-size: 32px;
+
+  opacity: 0.5;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 0;
+  /* 위아래좌우 */
+  padding: 0 0 0;
+  /* 위 좌우 아래 */
+  padding: 0 0 0 0;
+  /* 위 우 아 좌 */
+  /* z축 기준으로 어떤게 앞에 있는가? */
+}
+
+.zi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  width: 100px;
+  min-height: 100px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* media query 환경에따라
+CSS를 적용함.
+@media only(이거에만) screen(화면일때) and 
+(조건) { CSS 스타일 문법적용}
+위에 예시는 화면일 때만 너비가 1000px까지만 정용한다.
+*/
+  .etc {
+    width: 700px;
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .etc {
+    width: 300px;
+    background-color: lightblue;
+    color: black;
+  }
+}

@@ -6,6 +6,9 @@
    font-weight: 700;
   }
   
+  body{
+    background-image: url("다운로드 (1).jpg");
+  }
   
   form{
       height: fit-content;

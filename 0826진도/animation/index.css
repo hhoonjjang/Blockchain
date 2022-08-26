@@ -1,0 +1,95 @@
+div {
+  border: 1px solid black;
+
+  width: 500;
+  height: 658.13;
+  overflow: hidden;
+}
+
+.transform-translate img {
+  transform: translate(100px, 100px);
+  /* 모양 이동 
+  translate 함수  */
+}
+
+.transform-translateX img {
+  transform: translateX(100px);
+  /* 모양 이동 
+    translate 함수  */
+}
+.transform-translateY img {
+  transform: translateY(100px);
+  /* 모양 이동 
+    translate 함수  */
+}
+
+.transform-scale img {
+  transform: scale(0.5, 2);
+}
+
+.transform-skew img {
+  transform: skew(30deg, 30deg);
+  /* 회전 */
+}
+
+.transform-rotate img {
+  transform: rotate(150deg);
+}
+
+.transform-origin img {
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+  /*  origin은 기준이 되는 축
+  x y순으로 설정한다 */
+}
+
+.transition img {
+  transition: transform 3s ease, border 3s ease-in-out, border-radius 3s linear;
+
+  /* transition 은 애니메이션 효과를 주긴 하는데
+  css스타일이 변화하는 것에 대해서 설정한다.
+  ease-in -out 알아보기
+  transform에 대해 변화하는 시간과 변화방법에 대해 설정
+
+  */
+}
+
+.transition:hover img {
+  transform: rotate(720deg);
+  border: 10px dashed red;
+  border-radius: 100%;
+  /* 호버로 회전의 변화를 줌 */
+}
+
+@keyframes myanimation {
+  0% {
+    /* from */
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  /* to */
+
+}
+.animation:hover img {
+  animation: myanimation 3s ease;
+  /* animation:keyframes */
+}
+
+.animation:hover .test {
+  animation: myanimation 3s ease;
+  /* animation:keyframes */
+}
+
+.animation {
+  position: relative;
+}
+
+.test {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}

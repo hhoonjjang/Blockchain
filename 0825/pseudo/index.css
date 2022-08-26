@@ -1,0 +1,46 @@
+p.pseudo::after {
+  /* 가상클래스
+    의사요소
+    가짜로 넣어준다.
+    li 등등에서 기본값으로 사용된다
+    ::after는 태그의 마지막 자식으로 넣어준다. */
+  content: "ㅁㄴㅇㄴㅁㅇㄹend";
+}
+p.pseudo::before {
+  content: "ㄴㅁㅇㄴㅁㅇㄴㅁ";
+}
+
+input.pseudo::placeholder {
+  /* placeholder에 대한 스타일 정의 */
+  color: red;
+}
+
+a:link {
+  /* 링크에대한 스타일을 적용한다 */
+  color: brown;
+}
+
+a:visited {
+  /* 이동했던적이 있는 링크에 스타일을 적용한다 */
+  color: cadetblue;
+}
+
+.pseudo:hover {
+  /* 마우스가 올라가 있을때 */
+  font-size: 30px;
+}
+
+.pseudo:active {
+  /* 마우스가 클릭중일떄 */
+  font-size: 50px;
+}
+
+.pseudo:first-child {
+  background-color: aquamarine;
+}
+.pseudo:last-child {
+  background-color: hotpink;
+}
+.pseudo:nth-child(2) {
+  background-color: blue;
+}
