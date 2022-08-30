@@ -29,7 +29,7 @@
   z-index: 1;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1500px) {
   /* media query 환경에따라
 CSS를 적용함.
 @media only(이거에만) screen(화면일때) and 
@@ -42,7 +42,7 @@ CSS를 적용함.
   }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 700px) {
   .etc {
     width: 300px;
     background-color: lightblue;

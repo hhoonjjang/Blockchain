@@ -16,6 +16,7 @@
 .headerbar img {
   margin: 10px 10px;
   height: 70%;
+  cursor: pointer;
 }
 
 .headerbar .search img {
@@ -63,6 +64,9 @@
   background-color: aliceblue;
 }
 
+.search .button .img:hover {
+}
+
 .typingsearch {
   /* margin: 10 10; */
 
@@ -88,10 +92,15 @@
   margin: 10;
   /* background-color: blue; */
   width: 240px;
+  cursor: pointer;
 }
 
-.sidemenubar .table td {
-  border: 1px solid black;
+.sidemenubar .hoverevent {
+}
+
+.sidemenubar .hoverevent:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .sidemenubar .menuimg {
@@ -99,14 +108,10 @@
   /* border: 1px solid black; */
   /* background-color: aqua; */
 }
-.sidemenubar .menutext {
-  margin-left: 20px;
-  border: 1px solid black;
-}
 
 .mainbody {
   width: 100%;
-  background-color: yellow;
+  /* background-color: yellow; */
   display: flex;
 }
 
@@ -115,18 +120,24 @@
 }
 
 .categorybar {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   display: flex;
   justify-content: center;
   min-width: 600px;
   right: 0;
 }
 .categorybar .text {
-  border: 1px solid black;
+  border: 1px solid lightgoldenrodyellow;
+  border-radius: 30% 30% 30% 30%;
+  background-color: rgba(0, 0, 0, 0.1);
   margin: 10;
+  cursor: pointer;
   /* min-width: fit-content; */
   /* min-width: fit-content; */
   /* text-align: center; */
+}
+.categorybar .text:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .videobar {

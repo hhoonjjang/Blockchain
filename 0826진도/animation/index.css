@@ -43,6 +43,12 @@ div {
   x y순으로 설정한다 */
 }
 
+.mainvideoflexbox .thumbnail img:hover {
+  transform: scale(1.4,1.4);
+}
+
+
+
 .transition img {
   transition: transform 3s ease, border 3s ease-in-out, border-radius 3s linear;
 
