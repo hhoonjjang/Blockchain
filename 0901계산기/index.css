@@ -1,0 +1,41 @@
+.calculator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cheader1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cheader1 input {
+  width: 100%;
+}
+.body1 {
+  width: 100%;
+}
+.body1 .row1 div,
+.body1 .row2 div,
+.body1 .row3 div,
+.body1 .row4 div,
+.body1 .row5 div,
+.body1 .row6 div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row1,
+.row2,
+.row3,
+.row4,
+.row5,
+.row6 {
+  display: flex;
+  width: 100%;
+  /* height: 50px; */
+}
+
+button {
+  width: 100%;
+}

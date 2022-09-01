@@ -3,9 +3,7 @@ do {
   startPoint = Number(
     prompt(" 재훈이의 인생게임. \n 게임을 시작하겠습니까?\n 1.네 2.아니오")
   );
-
   let stage1;
-
   switch (startPoint) {
     case 1:
       alert("게임을 시작합니다");
@@ -53,11 +51,12 @@ do {
 
 let intscore = 10;
 let healthscore = 10;
-
+let date = 1;
+let deadLine = 14;
 if (startPoint == 1) {
   for (let i = 0; i < 16; i++) {
     if (i == 0) {
-      alert("10일을 어떻게 보내는지에 따라 당신의 미래가 바뀝니다.");
+      alert("15일을 어떻게 보내는지에 따라 당신의 미래가 바뀝니다.");
     } else {
     }
 
@@ -106,8 +105,14 @@ if (startPoint == 1) {
       }
     } while (choiceDailyLife === 6);
 
-    console.log(`현재 능력치: 체력:${healthscore} 지력:${intscore} `);
-    alert(`현재 능력치: 체력:${healthscore} 지력:${intscore} `);
+    console.log(
+      `${date}일이 지났습니다[${deadLine}일 남음]\n 현재 능력치: 체력:${healthscore} 지력:${intscore} `
+    );
+    alert(
+      `${date}일이 지났습니다[${deadLine}일 남음]\n 현재 능력치: 체력:${healthscore} 지력:${intscore} `
+    );
+    date++;
+    deadLine--;
     if (intscore <= 0) {
       console.log("빡대가리가 되었습니다.");
       alert("빡대가리가 되었습니다.");
@@ -138,8 +143,8 @@ if (startPoint == 1) {
     }
 
     if (i == 15) {
-      alert("당신은 10일을 무사히 보냈습니다.");
-      alert("당신은 10일을 보내기 위해 적당한 삶을 살았습니다.");
+      alert("당신은 15일을 무사히 보냈습니다.");
+      alert("당신은 15일을 보내기 위해 적당한 삶을 살았습니다.");
       alert("당신은 꿈을 이룰 자격이 생겼습니다.");
       console.log("라고할뻔~ 인생을 그렇게 살면 나가뒤져야지");
       alert("라고할뻔~");
