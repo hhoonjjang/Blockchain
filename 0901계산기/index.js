@@ -160,7 +160,7 @@ function factor() {
 function factor(num) {
   if (num == 1 || num == 0) return 1;
   num = parseInt(firstNum);
-  return num * (num - 1);
+  return num * factor(num - 1);
 }
 
 function remain() {
