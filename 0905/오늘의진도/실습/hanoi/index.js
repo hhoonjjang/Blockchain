@@ -20,8 +20,7 @@ function hanoi(n, start, sub, end) {
     console.log(`이동경로횟수는:${count}번입니다.`);
     hanoi(n - 1, sub, start, end);
   }
-
-  //   console.log(`${n}층이동`);
 }
 
 hanoi(n, start, sub, end);
+console.log(`${count}층이동`);
