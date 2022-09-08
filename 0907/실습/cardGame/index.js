@@ -38,6 +38,7 @@ function createDiv(cardCount) {
     div.classList.add(cards[i]);
     document.getElementById("gameboard").appendChild(div);
     div.addEventListener("click", pick());
+    div.id = "test" + cards[i];
     // let click = document.querySelectorall(".class1");
     // click.addEventListener("click", function () {
     //   alert("hello");

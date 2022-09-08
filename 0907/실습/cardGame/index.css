@@ -25,6 +25,10 @@ h1 {
   border: 1px solid black;
 }
 
+.gameboard div:hover {
+  background-color: lightblue;
+}
+
 .action div {
   width: 40%;
   border: 3px solid black;
