@@ -1,0 +1,13 @@
+div {
+  /* display: flex; */
+  text-align: center;
+  background-color: aquamarine;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  text-align: center;
+}
