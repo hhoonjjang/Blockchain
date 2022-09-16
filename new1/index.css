@@ -1,0 +1,24 @@
+.Display {
+  display: flex;
+  flex-direction: column;
+}
+
+.Dheader {
+  width: 30%;
+  height: 10%;
+  background-color: aqua;
+}
+
+.Dheader img {
+  width: 100%;
+  height: 100%;
+}
+.Dbody {
+  height: 50%;
+  background-color: aqua;
+}
+
+.Dfooter {
+  height: 70%;
+  background-color: aqua;
+}
