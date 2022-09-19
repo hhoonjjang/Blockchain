@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.gameHeader button {
+  font-size: 2vw;
+}
+.gameDisplay {
+  width: 50%;
+  /* height: 100%; */
+  /* background-color: black; */
+  margin: auto;
+}
+.gameHeader {
+  height: 20%;
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.coinImage {
+  display: flex;
+  width: 20%;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.gamebody {
+  width: 100%;
+  height: 50%;
+  background-position: center;
+  background-size: contain;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("보노보노.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.displayCenter {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background-color: black; */
+  max-width: 350px;
+}
+
+.displayCenter::after{
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  border-radius: 50%;
+  background-image: repeating-conic-gradient(
+    from 0deg,
+    red 0deg 24deg,
+    yellow 24deg 48deg,
+    blue 48deg 72deg
+  );
+}
+
+.circle:after{
+  padding-bottom: 100%;
+}
+
+.circleS img {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.circleC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background-color: aqua;
+  z-index: 6;
+  overflow: hidden;
+}
+
+.circleS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 5;
+}
+
+.displaytop {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.displaytop .win {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  opacity: 0.7;
+}
+.displaytop #arrow img {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.displaybottom {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+
+  /* line-height: 500%; */
+}
+
+.displaybottom div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  opacity: 0.7;
+}
+
+.coinImage img {
+  width: 60%;
+  height: 60%;
+}
+
+.userCoin {
+  width: 60%;
+  font-size: 8vw;
+  text-align: left;
+}
+
+.gamefooter {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.gamefooter img {
+  width: 70%;
+}
+
+.displayoff {
+  display: none;
+}
+
+.displaytop .displayOpacity {
+  background-color: blue;
+  opacity: 1;
+}
+
+.displaybottom .displayOpacity {
+  background-color: blue;
+  opacity: 1;
+}
+
+.displayonWin {
+  opacity: 1;
+}
+.displayonDraw {
+  opacity: 1;
+}
+.displayonLose {
+  opacity: 1;
+}
+
+.displayChoice {
+  width: 300px;
+  height: 300px;
+}
+
+
+
+/* .square{
+  width:50%;
+}
+.square:after{
+  content: "asdsad";
+  border: 1px solid black;
+  display: block;
+  padding-bottom: 100%;
+} */
