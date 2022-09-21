@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div class="backgroundopacity">
+    <div class="gameBackground">
     <div class="gameDisplay">
       <div class="gameHeader">
-        <div class="coinImage"><img src="코인.jpg" alt="" /></div>
-        <div class="userCoin" id="coinAmount"></div>
+        <div class="divide1"><div class="coinImage"><img src="코인.jpg" alt="" /></div></div>
+        <div class="divide2"><div class="userCoin" id="coinAmount"></div></div>
+        <div class="divide3"><button id="powerButton">파워버튼</button></div>
         <!-- <button id="speedbutton">이기면 500배</button> -->
-
-        <button id="powerButton">파워버튼</button>
       </div>
       <div class="gamebody">
-        
         <div class="displaytop">
           <div id="win" class="win">이겼다</div>
           <div id="arrow"><img src="arrow.png" alt=""></div>
@@ -42,21 +42,23 @@
           </div>
         </div>
         <div class="gamefooter">
-          <button class="playerSelect" id="userScissor"><img src="0.PNG" alt="" /></button>
-          <button class="playerSelect" id="userRock"><img src="1.PNG" alt="" /></button>
-          <button class="playerSelect" id="userPaper"><img src="2.PNG" alt="" /></button>
-          <button class="playerSelect"id="insert">
+          
+          <div class="selectButton"><button class="playerSelect" id="userScissor"><img src="0.PNG" alt="" /></button></div>
+          <div class="selectButton"><button class="playerSelect" id="userRock"><img src="1.PNG" alt="" /></button></div>
+          <div class="selectButton"><button class="playerSelect" id="userPaper"><img src="2.PNG" alt="" /></button></div>
+          <div class="selectButton"><button class="playerSelect"id="insert">
             <img src="투입구.jpg" alt=""  />
           </div>
+        </div>
         </div>
         <!-- <img src="bobo.jpg" alt="" /> -->
       </div>
       
     </div>
 
-    
   </div>
-
+  </div>
+</div>
 
     <script src="index.js"></script>
   </body>

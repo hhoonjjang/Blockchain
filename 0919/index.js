@@ -19,13 +19,15 @@ let createRouletteNum = (num) => {
     let newDiv = document.createElement("div");
     newDiv.innerHTML = rouletteNum[j];
     newDiv.id = "test" + [j];
+    newDiv.classList.add("roulette");
     document.getElementById("displayCenter").appendChild(newDiv);
-    newDiv.style.backgroundColor = "transparent";
-    newDiv.style.fontSize = "35px";
-    newDiv.style.color = "Red";
     newDiv.style.transform = `rotateZ(${24 * j}deg)`;
-    newDiv.style.position = "absolute";
-    newDiv.style.paddingBottom = "95%";
+    newDiv.style.overflow = "hidden";
+    newDiv.classList.add = "roulette";
+    newDiv.style.backgroundColor = "rgb(0, 255, 255)";
+    if (j % 3 == 2) newDiv.style.backgroundColor = "rgb(255, 91, 91)";
+    if (j % 3 == 1) newDiv.style.backgroundColor = "rgb(255, 255, 122)";
+
     // newDiv.style.z-index = "10";
   }
   console.log(rouletteNum);
@@ -203,14 +205,6 @@ let rouletteTime = () => {
   }, rotateNum);
 };
 
-// let slowstop = {
-//   setTimeout(()=>{
-//     imgSpeed = 2000;
-//     clearInterval(startChange);
-//     startChange(imgSpeed)
-//   },2000)
-// }
-
 let gameOver = () => {
   btnActive();
   if (coinAmount <= 0) {
@@ -382,7 +376,7 @@ document.getElementById("userPaper").onclick = () => {
       drawDisplay();
       console.log("비겼다");
       winJudge = -1;
-    } else if (imgIndex == 1) {
+    } else if (imgIndex == 0) {
       loseDisplay();
       startRotate();
       rouletteTime();
