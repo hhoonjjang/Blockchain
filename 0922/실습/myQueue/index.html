@@ -1,0 +1,54 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myQueue</title>
+  </head>
+  <body>
+    <script>
+      class myQueue {
+        constructor() {
+          this.arr = [];
+          this.front = 0;
+          this.rear = 0;
+        }
+        size() {
+          if (this.arr[this.rear] === undefined) return 0;
+          else return this.rear - this.front + 1;
+        }
+        enqueue(data) {
+          if (this.size() === 0) {
+            this.arr["0"] = data;
+          } else {
+            this.rear += 1;
+            this.arr[this.rear] = data;
+          }
+        }
+        dequeue() {
+          let temp;
+          if (this.front === this.rear) {
+            temp = this.arr[this.front];
+            delete this.arr[this.front];
+            this.front = 0;
+            this.rear = 0;
+          } else {
+            temp = this.arr[this.front];
+            delete this.arr[this.front];
+            this.front += 1;
+          }
+          return temp;
+        }
+      }
+      hi = new myQueue();
+      hi.enqueue("1");
+      hi.enqueue("2");
+      hi.enqueue("3");
+      hi.enqueue("4");
+      hi.enqueue("5");
+      hi.enqueue("6");
+      hi.dequeue();
+      console.log(hi);
+    </script>
+  </body>
+</html>
