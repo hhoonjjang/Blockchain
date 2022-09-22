@@ -43,6 +43,7 @@ createRouletteNum(num);
 let playerSelect1 = [...document.getElementsByClassName("playerSelect")];
 let displayOn = () => {
   document.getElementById("coinAmount").innerText = coinAmount;
+  document.getElementById("coinAmount").style.color = "red";
 };
 
 let displayOff = () => {
