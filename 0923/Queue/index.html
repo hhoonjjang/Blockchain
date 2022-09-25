@@ -1,0 +1,82 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const queueNode = {
+        arr: [],
+        push(data) {
+          this.arr.push(data);
+          // 뒤에서 넣고
+        },
+        shift() {
+          return this.arr.shift();
+          // 앞에서 뺀다.
+        },
+        get() {
+          return [...this.arr];
+          // arr에 직접적으로 접근하지 못하게 하도록 ,arr자체를 가져오게 하지 못하도록한다.
+        },
+      };
+      queueNode.push(0);
+      queueNode.push(1);
+      queueNode.push(2);
+      queueNode.push(3);
+      console.log(queueNode.shift());
+      console.log(queueNode.get());
+
+      class Node {
+        constructor(data) {
+          this.data = data;
+        }
+      }
+      class QueueNode extends Node {
+        constructor(data) {
+          super(data);
+          this.head;
+        }
+
+        enqueue(data) {
+          if (!this.data) {
+            this.data = data;
+          } else if (this.head) {
+            this.head.push(data);
+          } else {
+            this.head = new QueueNode(data);
+          }
+        }
+        dequeue() {
+          const temp = this.data;
+          // 첫 데이터를 저장한다. 정의한다.
+          if (this.head) {
+            // 헤드가있으면
+            this.data = this.head.data;
+            // 현재 노드의 데이터를 헤드의 데이터로 정의한다.
+            if (!this.head?.head) {
+              // 헤드의 헤드가 없으면 (다음 헤드가 마지막 노드면)
+              delete this.head;
+              // 헤드를 삭제한다.
+            } else {
+              // 헤드의 헤드가 있으면 (현재 노드의 헤드가 마지막 노드가 아니면)
+              this.head.dequeue();
+              // 헤드의 shift 메소드를호출한다.
+            }
+          } else {
+            // 헤드가 없으면 현재 노드가 끝이기 때문에 data를 없애준다.
+            this.data = undefined;
+          }
+          return temp;
+        }
+      }
+      let queue = new QueueNode(1);
+      console.log(queue);
+
+      queue.enqueue(3);
+      queue.dequeue();
+    </script>
+  </body>
+</html>
