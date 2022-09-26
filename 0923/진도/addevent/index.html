@@ -131,12 +131,15 @@
         let curr = this.head;
         // 현재 노드 설정 (시작은 head)
         if (curr.data === data) return true;
+        // head의 데이터가 찾으려는 데이터면 참 반환
         while (curr !== this.tail) {
           if (curr.next.data === data) {
+            // 다음 노드의 데이터를 확인해서 같으면 참 발환
             return true;
           }
           curr = curr.next;
         }
+        // 모든 노드 확인했는데 여기까지 오면 없다고 판단 가능.
         return false;
       };
     </script>
