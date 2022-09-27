@@ -66,15 +66,66 @@
             } else return;
           }
         }
+        remove(data, node = this.root) {
+          if (!this.root) return;
+          if (node.data > data) {
+            // node.left 지우려는 데이터가 현재 데이터보다 작다.
+            if (node.left) {
+              // 재귀함수 래프트에서 root
+              node.left = this.remove(data, node.left);
+              // 현재 노드의 왼쪽 노드가 있으면
+            }
+          } else if (node.data < data) {
+            if (node.right) {
+              node.right = this.remove(data, node.right);
+            }
+            // node.right 지우려는 데이터가 현재 노드의 데이터보다 크다
+          } else {
+            if (!node.left && !node.right) {
+              // 하위노드가없을때 바로 언디파인드 반환
+              if (node === this.root) this.root = undefined;
+              return undefined;
+            } else if (!node.left) {
+              return node.right;
+              // 왼쪽 노드가 없을때 오른쪽 노드를 박는다
+            } else if (!node.right) {
+              return node.left;
+              // 오른쪽 노드가 없을때 왼쪽 노드를 박는다
+            } else {
+              let tempNode = node.right;
+              while (tempNode.left) {
+                tempNode = tempNode.left;
+              }
+              node.data = tempNode.data;
+              // this.remove(temp.data,node.right);
+              node.right = this.remove(temp.data, node.right);
+            }
+          }
+          return node;
+          //   마지막에 현재 노드를 반환해준다.
+          // 재귀함수를 위해서.
+        }
       }
+
       const testSearch = new BinarySearchTree();
-      testSearch.insert(227);
-      testSearch.insert(777);
-      testSearch.insert(727);
-      testSearch.insert(141);
-      testSearch.insert(1229);
-      testSearch.insert(18);
-      testSearch.insert(666);
+      testSearch.insert(8);
+      testSearch.insert(4);
+      testSearch.insert(12);
+      testSearch.insert(2);
+      testSearch.insert(6);
+      testSearch.insert(10);
+      testSearch.insert(14);
+      testSearch.insert(1);
+      testSearch.insert(3);
+      testSearch.insert(5);
+      testSearch.insert(7);
+      testSearch.insert(9);
+      testSearch.insert(11);
+      testSearch.insert(13);
+      testSearch.insert(15);
+      testSearch.remove(1);
+      testSearch.remove(15);
+
       console.log(testSearch);
       //   let arr = [A, B, C, D, E, F, G, H];
       //   class Node {
