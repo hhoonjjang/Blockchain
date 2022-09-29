@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>124나라의숫자</title>
+  </head>
+  <body>
+    <script>
+      let arr = [1, 2, 0];
+      let arr1 = [];
+      let answer = [];
+      let n = 18;
+      while (n > 0) {
+        if (n % 3 == 0) {
+          arr1.push(4);
+          if ((n / 3) % 3 == 0) {
+            arr1.push(4);
+            n = parseInt(n / 3);
+            console.log(n);
+          }
+        } else if (n % 3 == 1) arr1.push(1);
+        else arr1.push(2);
+        n = parseInt(n / 3);
+      }
+      arr1.reverse();
+      console.log(arr1);
+
+      //n.toString().split('').reverse().map(item=>+item)
+    </script>
+  </body>
+</html>

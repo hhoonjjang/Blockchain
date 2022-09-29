@@ -1,0 +1,50 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function swap(arr, idx1, idx2) {
+        const temp = arr[idx1];
+        arr[idx1] = arr[idx2];
+        arr[idx2] = temp;
+      }
+
+      const dataArr = [
+        727, 129, 621, 333, 100, 708, 1112, 1121, 1229, 214, 1818, 500, 6, 8282,
+        119, 3838,
+      ];
+
+      function selectSort(arr) {
+        const tempArr = [...arr];
+        for (let i = 0; i < tempArr.length - 1; i++) {
+          let minIdx = i;
+          for (let j = i + 1; j < tempArr.length; j++) {
+            if (tempArr[minIdx] > tempArr[j]) {
+              minIdx = j;
+            }
+          }
+          swap(tempArr, minIdx, i);
+        }
+        return tempArr;
+      }
+
+      console.log(dataArr);
+      console.time("selectSort");
+      console.log(selectSort(dataArr));
+      console.timeEnd("selectSort");
+      console.log(dataArr);
+      //is***<< boolean,참거짓
+      //   ***s || ***Arr<<배열
+      // ***Data
+      // 동사*** << 함수 || 메소드
+      // on*** <<이벤트 함수
+      // get || set
+      // ***Api << Node.js에서 사용합니다. 보통 통신 관련, 즉서버에 요청하거나
+      // 서버에서 요청 받는 함수 || 메소드 feat.RESTAPI
+    </script>
+  </body>
+</html>
