@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>concat()</title>
+  </head>
+  <body>
+    <script>
+      const arr1 = ["가", "나", "다"];
+      const arr2 = ["마", "바", "사"];
+      const arr3 = arr1.concat(arr2);
+      console.log(arr1);
+      console.log(arr2);
+      console.log(arr3);
+      let num1 = [1, 2, 3];
+      let num2 = [4, 5, 6];
+      let num3 = [7, 8, 9];
+      let num = num1.concat(num2, num3);
+      console.log(num1);
+      console.log(num2);
+      console.log(num3);
+      console.log(num);
+      const alpha = ["a", "b", "c"];
+      let alphaplus = alpha.concat(1, [2, 3]);
+      console.log(alpha);
+      console.log(alpha.concat(1, [2, 3]));
+      console.log(alphaplus);
+    </script>
+  </body>
+</html>

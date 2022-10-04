@@ -9,25 +9,28 @@
     <script>
       let arr = [1, 2, 0];
       let arr1 = [];
-      let answer = [];
-      let n = 18;
+      let answer = "";
+      let n = 15;
       while (n > 0) {
         if (n % 3 == 0) {
           arr1.push(4);
-          //   if ((n / 3) % 3 == 0) {
-          //     arr1.push(4);
-          //     n = parseInt(n / 3);
-          //     console.log(n);
-          //   }
+          n = parseInt(n / 3);
+
+          n = n - 1;
         } else if (n % 3 == 1) {
           arr1.push(1);
+          n = parseInt(n / 3);
         } else {
           arr1.push(2);
           n = parseInt(n / 3);
         }
       }
+
       arr1.reverse();
+      arr1.toString();
       console.log(arr1);
+      answer = arr1.join("");
+      console.log(answer);
 
       //n.toString().split('').reverse().map(item=>+item)
     </script>

@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function solution(n) {
+        var answer = "";
+        let arr = [];
+        arr = String(n).split("");
+        console.log(arr);
+        arr = arr.sort((a, b) => b - a);
+
+        console.log(arr);
+        arr.forEach(function (word) {
+          answer += word;
+        });
+        console.log(answer);
+
+        return answer;
+      }
+      solution(118752);
+    </script>
+  </body>
+</html>

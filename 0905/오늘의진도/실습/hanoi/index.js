@@ -22,5 +22,12 @@ function hanoi(n, start, sub, end) {
   }
 }
 
+function solution(n) {
+  let answer = [];
+  let start = 1;
+  let sub = 2;
+  let end = 3;
+  
+console.log(solution(1));
 hanoi(n, start, sub, end);
 console.log(`${count}층이동`);
