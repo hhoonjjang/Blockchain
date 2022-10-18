@@ -1,0 +1,1470 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="shortcut icon" href="./다운로드.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="disPlayAll">
+      <div class="mainHeaderbar">
+        <div class="headerIcon">
+          <div class="menuIcon">
+            <div class="circleBox">
+              <button class="Pointer" id="toggle">
+                <img src="menu.PNG" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="homeImage Pointer"><img src="logo.png" alt="" /></div>
+        </div>
+        <div class="headerIcon1" id="headerIcon1">
+          <div class="menuIcon">
+            <div class="circleBox">
+              <button class="Pointer" id="toggle1">
+                <img src="menu.PNG" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="homeImage Pointer"><img src="logo.png" alt="" /></div>
+        </div>
+        <div class="centerBar">
+          <div class="searchBar">
+            <div id="searchBox">
+              <div id="searchImage">
+                <img src="search.png" alt="" id="searchhidden" />
+              </div>
+              <input type="text" placeholder="검색" id="inputBox" />
+            </div>
+            <div class="searchIcon">
+              <button class="Pointer" id="searchIcon">
+                <img src="search.png" alt="" />
+              </button>
+              <div class="navi_search">검색</div>
+            </div>
+          </div>
+          <div class="voiceBar">
+            <button id="voiceIcon" class="Pointer">
+              <img src="voice.png" alt="" />
+            </button>
+            <div class="navi_voice">음성으로 검색</div>
+          </div>
+        </div>
+        <div class="etc">
+          <div class="settingIcon" id="settingIcon">
+            <button class="Pointer" id="etcSetting">
+              <img src="setting.PNG" />
+            </button>
+            <div class="navi_setting" id="navi_setting">설정</div>
+            <ul class="etcMenu" style="display: none">
+              <li>
+                <img src="Mydata.png" alt="" />
+                <div>YouTube의 내 데이터</div>
+              </li>
+              <hr />
+              <li>
+                <img src="design.png" alt="" />
+                <div>디자인: 기기 테마</div>
+              </li>
+              <li>
+                <img src="rabbit.png" alt="" />
+                <div>언어: 한국어</div>
+              </li>
+              <li>
+                <img src="security.png" alt="" />
+                <div>제한 모드:사용 안함</div>
+              </li>
+              <li>
+                <img src="globe.png" alt="" />
+                <div>위치: 한국</div>
+              </li>
+
+              <li>
+                <img src="shortcut.png" alt="" />
+                <div>단축키</div>
+              </li>
+              <hr />
+              <li>
+                <img src="settings.png" alt="" />
+                <div>설정</div>
+              </li>
+              <hr />
+              <li>
+                <img src="question.png" alt="" />
+                <div>고객센터</div>
+              </li>
+              <li>
+                <img src="opinion.png" alt="" />
+                <div>의견 보내기</div>
+              </li>
+            </ul>
+          </div>
+          <div class="loginIcon">
+            <button class="Pointer" id="etcLogin">
+              <img src="login.PNG" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="disPlayBody">
+        <div class="sideMenubar">
+          <div class="sideContainer">
+            <img src="home.png" alt="" />
+            <div id="homeIcon">홈</div>
+          </div>
+          <div class="sideContainer">
+            <img src="compass.png" />
+            <div id="searchIcon">탐색</div>
+          </div>
+          <div class="sideContainer">
+            <img src="shorts.png" />
+            <div id="shortsIcon">shorts</div>
+          </div>
+          <div class="sideContainer">
+            <img src="subscribe.png" alt="" />
+            <div id="subscribeIcon">구독</div>
+          </div>
+          <div class="sideContainer">
+            <img src="contain.png" alt="" />
+            <div id="containerIcon">보관함</div>
+          </div>
+          <div class="sideContainer" id="historyIcon">
+            <img src="history.png" alt="" />
+            <div>시청 기록</div>
+          </div>
+        </div>
+        <div id="sideScroll">
+          <div class="sideMenubarHidden" id="sideMenubarHidden">
+            <div class="absolSideHidden">
+              <div class="sideContainerHidden">
+                <img src="home.png" alt="" />
+                <div id="homeIcon">홈</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="compass.png" />
+                <div id="searchIcon">탐색</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="shorts.png" />
+                <div id="shortsIcon">shorts</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="subscribe.png" alt="" />
+                <div id="subscribeIcon">구독</div>
+              </div>
+              <hr />
+              <div class="sideContainerHidden">
+                <img src="contain.png" alt="" />
+                <div id="containerIcon">보관함</div>
+              </div>
+              <div class="sideContainerHidden" id="historyIcon">
+                <img src="history.png" alt="" />
+                <div>시청 기록</div>
+              </div>
+              <hr />
+              <div class="sideMenuLogin">
+                로그인하면 동영상에 좋아요를 표시하고 댓글을 달거나 구독할 수
+                있습니다.
+                <br />
+                <button>
+                  <img src="login.PNG" alt="" class="h2" />
+                </button>
+              </div>
+              <hr />
+              <div class="sideText">탐색</div>
+              <div class="sideContainerHidden">
+                <img src="compass.png" />
+                <div id="searchIcon">음악</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="shorts.png" />
+                <div id="shortsIcon">sports</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="subscribe.png" alt="" />
+                <div id="subscribeIcon">게임</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="contain.png" alt="" />
+                <div id="containerIcon">영화</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="compass.png" />
+                <div id="searchIcon">학습</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="compass.png" />
+                <div id="searchIcon">360°동영상</div>
+              </div>
+              <hr />
+              <div class="sideContainerHidden">
+                <img src="contain.png" alt="" />
+                <div id="containerIcon">채널탐색</div>
+              </div>
+              <hr />
+              <div class="sideText">YOUTUBE 더보기</div>
+              <div class="sideContainerHidden">
+                <img src="home.png" alt="" />
+                <div id="homeIcon">YouTube Premium</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="compass.png" />
+                <div id="searchIcon">YouTube Music</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="shorts.png" />
+                <div id="shortsIcon">YouTubeKids</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="subscribe.png" alt="" />
+                <div id="subscribeIcon">YouTube TV</div>
+              </div>
+              <hr />
+              <div class="sideContainerHidden">
+                <img src="home.png" alt="" />
+                <div id="homeIcon">설정</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="compass.png" />
+                <div id="searchIcon">신고 기록</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="shorts.png" />
+                <div id="shortsIcon">고객센터</div>
+              </div>
+              <div class="sideContainerHidden">
+                <img src="subscribe.png" alt="" />
+                <div id="subscribeIcon">의견 보내기</div>
+              </div>
+              <hr />
+              <div class="sideMenuFooter">
+                <div>
+                  <span><a href="#">정보</a> </span>
+                  <span><a href="#">보도자료</a> </span>
+                  <span><a href="#">저작권</a> </span>
+                </div>
+                <div>
+                  <span><a href="#">문의하기</a> </span>
+                  <span><a href="#">크리에이터</a> </span>
+                  <span><a href="#">광고</a> </span>
+                </div>
+                <div>
+                  <span><a href="#">개발자</a> </span>
+                </div>
+                <br />
+                <div>
+                  <span><a href="#">약관</a> </span>
+                  <span><a href="#">개인정보처리방침</a> </span>
+                </div>
+                <div>
+                  <span><a href="#">정책 및 안전</a> </span>
+                </div>
+                <div>
+                  <span><a href="#">YouTube작동의 원리</a> </span>
+                </div>
+                <div>
+                  <span><a href="#">새로운 기능 테스트하기</a> </span>
+                </div>
+                <br />
+                <div class="last">
+                  <span>
+                    © 2022 Google LLC, Sundar Pichai, 1600 Amphitheatre Parkway,
+                    Mountain View CA 94043, USA, 080-822-1450 (무료),
+                    yt-support-solutions-kr@google.com, 호스팅: Google LLC,
+                  </span>
+                  <span><a href="#">사업자정보,</a> </span>
+                  <span><a href="#">불법촬영물 신고</a> </span>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="disPlayMainBody" id="display">
+          <div class="protect" id="protect"></div>
+          <div class="categoryBar" id="categoryBar">
+            <div class="categoryText"><div>전체</div></div>
+            <div class="categoryText"><div>게임</div></div>
+            <div class="categoryText"><div>음악</div></div>
+            <div class="categoryText"><div>피트니스</div></div>
+            <div class="categoryText"><div>요리 프로그램</div></div>
+            <div class="categoryText"><div>요리</div></div>
+            <div class="categoryText"><div>만화 영화</div></div>
+            <div class="categoryText"><div>최근에 업로드된 동영상</div></div>
+            <div class="categoryText"><div>감상한 동영상</div></div>
+          </div>
+          <div class="videoBar">
+            <div class="videoTopContainer" id="1">
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail.webp" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">1:30</div>
+                  </div>
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        아기수달가족에게 직접잡은 무지개 송어를 줘보았다.
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">정브르</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 108만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">8개월전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail1.webp" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video1.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">0:35</div>
+                  </div>
+
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile1.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        霧多布岬のラッコの親子(1)20200613
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">宿房 樺のん</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 1만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">2년전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail2.png" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video2.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">1:43</div>
+                  </div>
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile2.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        태어나서 물을 처음으로 마셔본 아기고양이의 귀여운
+                        반응ㅋㅋ
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">컬리와 브리오슈번</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 1.3만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">4개월전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail3.png" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video3.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">3:03</div>
+                  </div>
+
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile3.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        [MBC 스페셜] 친구들과 놀러 다니는 펭귄! 자립을 준비하는
+                        펭이와 솜이!
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">MBClife</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 92만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">2년전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail4.webp" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video4.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">12:30</div>
+                  </div>
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile4.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        밤마다 같이 자자고 말하는 아기강아지
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">뚜비TV</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 950만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">3년전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail1.webp" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video1.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">12:30</div>
+                  </div>
+
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile1.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        霧多布岬のラッコの親子(1)20200613
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">宿房 樺のん</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 1만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">2년전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail.webp" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">12:30</div>
+                  </div>
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        아기수달가족에게 직접잡은 무지개 송어를 줘보았다.
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">정브르</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 108만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">8개월전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail1.webp" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video1.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">12:30</div>
+                  </div>
+
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile1.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        霧多布岬のラッコの親子(1)20200613
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">宿房 樺のん</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 1만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">2년전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail.webp" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">12:30</div>
+                  </div>
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        아기수달가족에게 직접잡은 무지개 송어를 줘보았다.
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">정브르</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 108만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">8개월전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail1.webp" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video1.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">12:30</div>
+                  </div>
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile1.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        霧多布岬のラッコの親子(1)20200613
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">宿房 樺のん</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 1만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">2년전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shortsVideo">
+              <div class="shortsTop">
+                <img src="shortsimage.JPG" alt="" />
+                <div>Shorts</div>
+              </div>
+              <div class="shortsBody">
+                <div class="shortsVideoItem">
+                  <div class="shortsThumbnail">
+                    <img src="shortsthumbnail.webp" alt="" />
+                  </div>
+                  <div class="shortsInfo">
+                    <div class="shortsFooter">
+                      <div class="absolDiv">
+                        <div class="shortsTitle">거짓말하다 딱 걸린 아이유</div>
+                        <div class="shortsView">조회수 515만회</div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="opinion.png" alt="" />
+                          <div>의견 보내기</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shortsVideoItem">
+                  <div class="shortsThumbnail">
+                    <img src="shortsthumbnail2.webp" alt="" />
+                  </div>
+                  <div class="shortsInfo">
+                    <div class="shortsFooter">
+                      <div class="shortsTitle">
+                        안면비대칭 연예인은? (제니, 고윤정, 한소희, 수지,
+                        아이린, 쯔위 등) #shorts
+                      </div>
+                      <div class="shortsView">조회수 2.9만회</div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="opinion.png" alt="" />
+                          <div>의견 보내기</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shortsVideoItem">
+                  <div class="shortsThumbnail">
+                    <img src="shortsthumbnail3.webp" alt="" />
+                  </div>
+                  <div class="shortsInfo">
+                    <div class="shortsFooter">
+                      <div class="shortsTitle">말대꾸하는 아기 강아지</div>
+                      <div class="shortsView">조회수 616만회</div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="opinion.png" alt="" />
+                          <div>의견 보내기</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shortsVideoItem">
+                  <div class="shortsThumbnail">
+                    <img src="shortsthumbnail4.webp" alt="" />
+                  </div>
+                  <div class="shortsInfo">
+                    <div class="shortsFooter">
+                      <div class="shortsTitle">아기 물개 울음소리</div>
+                      <div class="shortsView">조회수 163만회</div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="opinion.png" alt="" />
+                          <div>의견 보내기</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shortsVideoItem">
+                  <div class="shortsThumbnail">
+                    <img src="shortsthumbnail5.webp" alt="" />
+                  </div>
+                  <div class="shortsInfo">
+                    <div class="shortsFooter">
+                      <div class="shortsTitle">시간을 되돌리는 능력</div>
+                      <div class="shortsView">조회수 638만회</div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="opinion.png" alt="" />
+                          <div>의견 보내기</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shortsVideoItem">
+                  <div class="shortsThumbnail">
+                    <img src="shortsthumbnail6.webp" alt="" />
+                  </div>
+                  <div class="shortsInfo">
+                    <div class="shortsFooter">
+                      <div class="shortsTitle">
+                        하품하는 시바견 입에 발 넣기
+                      </div>
+                      <div class="shortsView">조회수 379만회</div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="opinion.png" alt="" />
+                          <div>의견 보내기</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shortsVideoItem">
+                  <div class="shortsThumbnail">
+                    <img src="shortsthumbnail7.webp" alt="" />
+                  </div>
+                  <div class="shortsInfo">
+                    <div class="shortsFooter">
+                      <div class="shortsTitle">
+                        당신은 루루의 공격을 버틸 수 있습니까?
+                      </div>
+                      <div class="shortsView">조회수 1591만회</div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="opinion.png" alt="" />
+                          <div>의견 보내기</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shortsVideoItem">
+                  <div class="shortsThumbnail">
+                    <img src="shortsthumbnail8.webp" alt="" />
+                  </div>
+                  <div class="shortsInfo">
+                    <div class="shortsFooter">
+                      <div class="shortsTitle">
+                        입꼬리 안 올라가기 챌린지 Part2
+                      </div>
+                      <div class="shortsView">조회수 169만회</div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="opinion.png" alt="" />
+                          <div>의견 보내기</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shortsVideoItem">
+                  <div class="shortsThumbnail">
+                    <img src="shortsthumbnail9.webp" alt="" />
+                  </div>
+                  <div class="shortsInfo">
+                    <div class="shortsFooter">
+                      <div class="shortsTitle">
+                        한국고양이 vs 유럽고양이 #shorts
+                      </div>
+                      <div class="shortsView">조회수 73만회</div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="opinion.png" alt="" />
+                          <div>의견 보내기</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shortsVideoItem">
+                  <div class="shortsThumbnail">
+                    <img src="shortsthumbnail10.webp" alt="" />
+                  </div>
+                  <div class="shortsInfo">
+                    <div class="shortsFooter">
+                      <div class="shortsTitle">
+                        음방 보러와준 팬들한테 팬서비스 해주는 카리나
+                      </div>
+                      <div class="shortsView">조회수 442만회</div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="opinion.png" alt="" />
+                          <div>의견 보내기</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shortsVideoItem">
+                  <div class="shortsThumbnail">
+                    <img src="shortsthumbnail11.webp" alt="" />
+                  </div>
+                  <div class="shortsInfo">
+                    <div class="shortsFooter">
+                      <div class="shortsTitle">
+                        장원영 이뻤던 착장 모음 (러브다이브)
+                      </div>
+                      <div class="shortsView">조회수 149만회</div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="opinion.png" alt="" />
+                          <div>의견 보내기</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="shortsVideoItem">
+                  <div class="shortsThumbnail">
+                    <img src="shortsthumbnail12.webp" alt="" />
+                  </div>
+                  <div class="shortsInfo">
+                    <div class="shortsFooter">
+                      <div class="shortsTitle">
+                        팬미팅에서 냅다 사랑 고백하는 윈터
+                      </div>
+                      <div class="shortsView">조회수 325만회</div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="opinion.png" alt="" />
+                          <div>의견 보내기</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="overFlow_open" id="arrowIcon">
+                <div class="arrowIcon">
+                  <img src="downarrow.svg" alt="" />
+                </div>
+                <div class="navi_arrow">펼치기</div>
+              </div>
+            </div>
+            <div class="videoInfiniteContainer">
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail.webp" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">1:30</div>
+                  </div>
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        아기수달가족에게 직접잡은 무지개 송어를 줘보았다.
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">정브르</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 108만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">8개월전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail1.webp" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video1.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">0:35</div>
+                  </div>
+
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile1.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        霧多布岬のラッコの親子(1)20200613
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">宿房 樺のん</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 1만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">2년전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail2.png" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video2.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">1:43</div>
+                  </div>
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile2.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        태어나서 물을 처음으로 마셔본 아기고양이의 귀여운
+                        반응ㅋㅋ
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">컬리와 브리오슈번</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 1.3만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">4개월전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail3.png" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video3.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">3:03</div>
+                  </div>
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile3.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        [MBC 스페셜] 친구들과 놀러 다니는 펭귄! 자립을 준비하는
+                        펭이와 솜이!
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">MBClife</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 92만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">2년전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="normalVideoItem">
+                <div class="absoluteDiv">
+                  <div class="thumbNail">
+                    <img src="thumbnail4.webp" alt="" />
+                    <div class="hiddenvideo">
+                      <video src="video4.mp4" autoplay muted></video>
+                    </div>
+                    <div class="videoMouseOver">
+                      계속마우스 오버하여 재생하기
+                    </div>
+                    <div class="runTime">12:30</div>
+                  </div>
+                  <div class="videoFlexbox">
+                    <div class="userProfile">
+                      <img src="profile4.PNG" alt="" />
+                    </div>
+                    <div class="videoInfo">
+                      <div class="videoTitleText">
+                        밤마다 같이 자자고 말하는 아기강아지
+                      </div>
+                      <div class="videoInfoFooter">
+                        <div class="userName">뚜비TV</div>
+                        <div class="viewUpdate">
+                          <div class="viewCount">조회수 950만회</div>
+                          <div class="borderline">&middot</div>
+                          <div class="upDated">3년전</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hiddenSetting">
+                      <button class="settingButton">
+                        <img src="setting.PNG" alt="" />
+                      </button>
+                      <ul class="menu" style="display: none">
+                        <li>
+                          <img src="addlist.png" alt="" />
+                          <div>현재 재생목록에 추가</div>
+                        </li>
+                        <li>
+                          <img src="share.png" alt="" />
+                          <div>공유</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="hiddenfooter">
+                    <div class="container">
+                      <img src="latervideo.png" alt="" />
+                      <div class="laterviedo">나중에 볼 동영상</div>
+                    </div>
+                    <div class="container">
+                      <img src="addlist.png" />
+                      <div class="addlist">현재 재생목록에 추가</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

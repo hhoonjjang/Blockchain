@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.backgroundopacity {
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  opacity: 1;
+}
+.gameBackground {
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("보노보노.jpg");
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.gameHeader button {
+  width: 100%;
+  height: 100%;
+  font-size: 2vw;
+}
+.gameDisplay {
+  width: 100%;
+  /* height: 100%; */
+  /* background-color: black; */
+  margin: auto;
+}
+.gameHeader {
+  /* border: 3px solid black; */
+  height: 15%;
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* .gameHeader div {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+} */
+
+.divide1 {
+  width: 20%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divide2 {
+  width: 70%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userCoin {
+  width: 100%;
+  margin-left: 20;
+  font-size: 6vw;
+  text-align: left;
+  color: yellow;
+}
+
+.divide3 {
+  width: 10%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+/* .gamefooter button{
+    border: none;
+} */
+
+.coinImage {
+  display: flex;
+  width: 60%;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.coinImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.gamebody {
+  width: 100%;
+  height: 65%;
+  /* background-color: lightsalmon; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 3vw;
+  font-weight: bold;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.displayCenter {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background-color: black; */
+  max-width: 300px;
+}
+
+.displayCenter::after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  /* background-image: repeating-conic-gradient(
+    from 0deg,
+    red 0deg 24deg,
+    yellow 24deg 48deg,
+    blue 48deg 72deg
+  ); */
+}
+
+.circle:after {
+  padding-bottom: 100%;
+}
+
+.circleS img {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.circleC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background-color: aqua;
+  z-index: 6;
+  overflow: hidden;
+}
+
+.circleS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 5;
+}
+
+.displaytop {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.displaytop .win {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  opacity: 0.4;
+}
+.displaytop #arrow img {
+  opacity: 0.8;
+  width: 100%;
+  height: 90%;
+}
+
+.displaybottom {
+  width: 80%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+
+  /* line-height: 500%; */
+}
+
+.displaybottom div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  opacity: 0.4;
+}
+
+.gamefooter {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.gamefooter img {
+  width: 100%;
+  height: 100%;
+}
+.gamefooter div {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.selectButton button {
+  width: 100%;
+  height: 100%;
+}
+
+.displayoff {
+  display: none;
+}
+
+.displaytop .displayOpacity {
+  background-color: blue;
+  opacity: 0.8;
+}
+
+.displaybottom .displayOpacity {
+  background-color: blue;
+  opacity: 0.8;
+}
+
+.roulette {
+  font-size: 2vw;
+  color: blue;
+
+  position: absolute;
+  padding-bottom: 45%;
+  margin-bottom: 60%;
+  transform-origin: bottom;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  width: 23%;
+  text-align: center;
+}

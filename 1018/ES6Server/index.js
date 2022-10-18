@@ -2,7 +2,7 @@
 import express from "express";
 import session from "express-session";
 import dotenv from "dotenv";
-import cookieParser from "cookie-Parser";
+import cookieParser from "cookie-parser";
 import morgan from "morgan";
 import path from "path";
 import { fileURLToPath } from "url";
