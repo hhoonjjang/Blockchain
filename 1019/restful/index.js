@@ -42,7 +42,7 @@ app.post("/*", (req, res, next) => {
   next();
 });
 app.post("/api/user", (req, res) => {
-  res.cookie("name", req.body.name);
+  res.cookie("name", req.body.nfame);
   //  쿠키를 추가한다.
   // 내가 만든 꾸끼
 
