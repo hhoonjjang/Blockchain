@@ -196,6 +196,25 @@ async function getList() {
   }
 }
 getList();
+
+document.getElementById("sign-in").onclick = async function (e) {
+  e.preventDefault();
+  const data = await axios.post("/api/user/login", {
+    id: document.forms["user-info"].id.value,
+    pw: document.forms["user-info"].pw.value,
+  });
+  console.log(data.data);
+};
+document.getElementById("sign-up").onclick = async function (e) {
+  e.preventDefault();
+  const data = await axios.post("/api/user/regist", {
+    id: document.forms["user-info"].id.value,
+    pw: document.forms["user-info"].pw.value,
+  });
+  console.log(data.data);
+  console.log(document.cookie);
+};
+
 // form 안에 있는 button은 기본적으로 form의 submit을 실행
 
 // axios.post("/api/board/add").then((data) => {
