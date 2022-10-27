@@ -1,0 +1,34 @@
+.inputBox input:nth-child(n + 3) {
+  display: none;
+}
+
+.inputBox.in input:nth-child(n + 3) {
+  display: block;
+}
+
+.inputBox.on input {
+  display: none;
+}
+
+.inputBtnBox {
+  display: flex;
+}
+
+.inputBtnBox.in #sign-in {
+  display: none;
+}
+
+.inputBtnBox.on button {
+  display: block;
+}
+
+.inputBtnBox button {
+  display: none;
+}
+
+.inputBtnBox #sign-out {
+  display: block;
+}
+.inputBtnBox.on #sign-out {
+  display: none;
+}

@@ -33,10 +33,20 @@ const dotenv = require("dotenv");
 // require("./api/jwt.js");
 
 // import "./api/cryptoTEst.js"
-require.apply("./api/.javascript.js");
+require("./api/javascript.js");
 const routes = require("./routes/index.js");
 
-const boardList = [];
+const boardList = [
+  { title: "arvserv1", text: "9baresrsearvstb" },
+  { title: "arvserv2", text: "8baresrsearvstb" },
+  { title: "arvserv3", text: "7baresrsearvstb" },
+  { title: "arvserv4", text: "6baresrsearvstb" },
+  { title: "arvserv5", text: "5baresrsearvstb" },
+  { title: "arvserv6", text: "4baresrsearvstb" },
+  { title: "arvserv7", text: "3baresrsearvstb" },
+  { title: "arvserv8", text: "2baresrsearvstb" },
+  { title: "arvserv9", text: "1baresrsearvstb" },
+];
 
 dotenv.config();
 

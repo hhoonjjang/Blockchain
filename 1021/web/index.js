@@ -202,6 +202,7 @@ document.getElementById("sign-in").onclick = async function (e) {
   const data = await axios.post("/api/user/login", {
     id: document.forms["user-info"].id.value,
     pw: document.forms["user-info"].pw.value,
+    name: document.form["user-info"].name.value,
   });
   console.log(data.data);
 };
@@ -210,6 +211,7 @@ document.getElementById("sign-up").onclick = async function (e) {
   const data = await axios.post("/api/user/regist", {
     id: document.forms["user-info"].id.value,
     pw: document.forms["user-info"].pw.value,
+    name: document.form["user-info"].name.value,
   });
   console.log(data.data);
   console.log(document.cookie);

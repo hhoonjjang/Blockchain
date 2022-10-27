@@ -30,7 +30,10 @@ router.post("/regist", (req, res) => {
   // 응답 쿠키 추가
 
   if (!userlist[req.body.id]) {
-    userlist[req.body.id] = crypto.SHA256(req.body.pw).toString();
+    userlist[req.body.id] = {
+      pw: crypto.SHA256(req.body.pw).toString(),
+      name: req.body.name,
+    };
     // userlist['asdf'] = req.body.pw '2134';
 
     // userlist[req.body.id] = { pw: req.body.pw, name: req.body.name };
@@ -50,10 +53,10 @@ router.post("/login", (req, res) => {
   console.log(req.body);
   console.log(userlist);
   //   if (userArr.find((data) => data.id === req.body.id)?.pw === req.body.pw) {
-  if (userlist[req.body.id] === crypto.SHA256(req.body.pw).toString()) {
+  if (userlist[req.body.id]?.pw === crypto.SHA256(req.body.pw).toString()) {
     res.send({ status: 200, data: "login" });
   } else {
-    res.send({ status: 401, data: "wrong password", userlist });
+    res.send({ status: 401, data: "wrong password" });
   }
 });
 
