@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 // const jwt = require("jsonwebtoken");
 
 router.use("/", (req, res, next) => {
+  // 미들웨어
   global.userId = "";
   try {
     const tempUserInfo = jwt.verify(req.cookies.sid, process.env.JWT_KEY);
@@ -53,9 +54,13 @@ router.post("/add", async (req, res) => {
 });
 
 router.put("/update", async (req, res) => {
+  //UPDATE TableName SET text=${req.body.text} WHERE id =${req.body.id}
   await Board.update(
+    //업데이트
+
     {
       text: req.body.text,
+      //어떤 컬럼에 어떤 값으로
     },
     {
       where: {
