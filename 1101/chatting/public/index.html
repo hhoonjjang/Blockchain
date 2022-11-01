@@ -1,0 +1,35 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>재훈톡</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div>
+      <form id="sign-up">
+        <input id="user-id" type="text" placeholder="ID" />
+        <input id="user-pw" type="text" placeholder="Password" />
+        <input id="user-name" type="text" placeholder="Name" />
+        <button id="sign-up-btn">Sign up</button>
+      </form>
+      <form id="sign-in">
+        <input id="user-id" type="text" placeholder="ID" />
+        <input id="user-pw" type="text" placeholder="Password" />
+        <button id="sign-in-btn">Sign in</button>
+      </form>
+      <div id="usernamedisplay"></div>
+      <button id="sign-out-btn">Sign Out</button>
+    </div>
+    <div class="chattingBoard">
+      <div id="chatDisplay"></div>
+      <input type="text" id="chatting" />
+      <button id="send-msg">보내기</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

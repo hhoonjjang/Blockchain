@@ -1,0 +1,17 @@
+.on {
+  display: none;
+}
+
+#sign-out-btn {
+  display: none;
+}
+
+.chattingBoard {
+  /* background-color: blue; */
+}
+
+#chatDisplay {
+  border: 1px solid black;
+  height: 400;
+  overflow: auto;
+}
