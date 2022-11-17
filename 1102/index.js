@@ -5,7 +5,7 @@ const socket = require("./socket.js");
 const app = express();
 app.use("/", express.static(__dirname + "/front"));
 
-const server = app.listen(8080, () => {
+const server = app.listen(4040, () => {
   console.log("server start");
 });
 
