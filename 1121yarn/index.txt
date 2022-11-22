@@ -1,0 +1,23 @@
+현재 yarn 3.3버전은 불안정하다.
+ create-react-app 
+ npm list -g 전역으로 설치된 라이브러리를 확인한다.
+ 
+
+ npm uninstall -g corepack << 전역으로 설치된 코어팩을 삭제한다.
+corepack = yarn 을 포함하고있다. <<<<<< corepack 이  yarn3.3이다
+
+npm i -g yarn << yarn을 설치하자.
+
+yarn -v
+
+yarn create react-app testing << react 기본 설치
+
+
+npm i styled-components  === yarn add styled-components 
+
+
+npm remove styled-components === npm remove styled-components
+npm install === yarn install 
+
+
+

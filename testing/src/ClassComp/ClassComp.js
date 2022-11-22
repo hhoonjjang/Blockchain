@@ -20,11 +20,9 @@ export default class ClassComp extends React.Component {
       <div
         onClick={function () {
           this.setState({ count: this.state.count + 1 });
-        console.log({"hi"})
-
+          // console.log({"hi"})
         }}
-      >
-      </div>
+      ></div>
     );
   }
 }
