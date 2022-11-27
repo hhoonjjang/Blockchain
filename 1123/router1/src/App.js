@@ -4,8 +4,7 @@ import Header from "./components/Header";
 import LogIn from "./components/LogIn";
 import { useState } from "react";
 import Log from "./components/Log";
-import In from "./components/Log/In";
-import Out from "./components/Log/Out";
+
 function App() {
   const [num, setNum] = useState(0);
   return (
