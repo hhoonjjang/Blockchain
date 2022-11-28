@@ -13,7 +13,7 @@ export const LogBtn = styled.div`
   margin: 5px;
 
   &.on {
-    display: block;
+    display: inline-block;
   }
   &.off {
     display: none;

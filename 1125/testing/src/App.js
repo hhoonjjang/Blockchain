@@ -8,13 +8,12 @@ import ReducerTest2 from "./components/ReducerTest2";
 function App() {
   return (
     <div className="App">
-      <ReducerTest2>
-        <PropsTest />
-        <ContextTest />
-        <ReducerTest>
-          <Office />
-        </ReducerTest>
-      </ReducerTest2>
+      <ReducerTest2 />
+      <PropsTest />
+      <ContextTest />
+      <ReducerTest>
+        <Office />
+      </ReducerTest>
     </div>
   );
 }
