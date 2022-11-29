@@ -4,16 +4,24 @@ import store from "./store";
 import { useState, setState } from "react";
 import EditInput from "./reducer/EditInput";
 import { Link, Routes, Route } from "react-router-dom";
-import { COUNT1, actions as count1Actions } from "./action/count1";
 function App() {
   // let a;
   const [input, setCount] = useState(0);
   const [array, setArray] = useState([]);
   const [a, setA] = useState(1);
   const [edit, setEdit] = useState("");
+  const [_, setRender] = useState(false);
+
+  //  _ 란 보통 사용하지 않을 변수의 이름으로 설정한다. 일종의 관례
+  //  _ 라는 라이브러리도 있으니 주의사항이다(lowbar).
   return (
     <div className="App">
       <div>{store.getState().count1}</div>
+      {/* store.getState() 는 store를 가져온다. */}
+      {/* stroe.getState()로 받아온 store의 객체는 React의 랜더링에 관여하지않는다. */}
+      {/* 그래서 Class 컴포넌트에서는 forceupdate()를 사용해서 강제로 랜더링을 해준다. */}
+      {/* function 컴포넌트에서는 state를 하나 만들어서 setState를 통해 랜더링을 강제한다. */}
+
       <div>{store.getState().count2}</div>
 
       <input
@@ -26,15 +34,22 @@ function App() {
       ></input>
       <button
         onClick={() => {
-          store.dispatch(count1Actions.plus(inputCount));
+          store.dispatch({
+            type: "count1/Plus",
+            payload: { input: input },
+          });
           setA(-a);
+          // setRender((state) => !state);
         }}
       >
         +
       </button>
       <button
         onClick={() => {
-          store.dispatch(count1Actions.minus(inputCount));
+          store.dispatch({
+            type: "count1/Minus",
+            payload: { input: input },
+          });
           setA(-a);
         }}
       >
