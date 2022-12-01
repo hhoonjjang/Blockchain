@@ -9,14 +9,21 @@ import {
   initialize as boardAddIni,
   reducer as boardAddReducer,
 } from "./boardAdd";
+import { initialize as boardIni, reducer as boardReducer } from "./board";
 
 const store = createStore(
   combineReducers({
     userInfo: userInfoReducer,
     userDB: userDBReducer,
     boardAdd: boardAddReducer,
+    board: boardReducer,
   }),
-  { userInfo: userInfoIni, userDB: userDBIni, boardAdd: boardAddIni },
+  {
+    userInfo: userInfoIni,
+    userDB: userDBIni,
+    boardAdd: boardAddIni,
+    board: boardIni,
+  },
   composeWithDevTools()
 );
 

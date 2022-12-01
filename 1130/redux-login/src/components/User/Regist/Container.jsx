@@ -1,7 +1,7 @@
 // import { useDispatch } from "react-redux";
 import store from "../../../modules/store";
 import RegistComponent from "./Component";
-
+import axios from "axios";
 import { action } from "../../../modules/userDB";
 
 const RegistContainer = () => {
@@ -18,6 +18,11 @@ const RegistContainer = () => {
     //(반환값,action)을 매개변수로 전달했다.
     // 11.dispatch는 reducer를 호출하며 받은 action을 매개변수로 전달한다.
     store.dispatch(action.regist(userId, userPw, userName));
+    axios.post("http://localhost:8080/api/user/regist", {
+      userId,
+      userPw,
+      userName,
+    });
   };
 
   console.log("RegistContainer", onClick);
