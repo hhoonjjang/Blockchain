@@ -28,4 +28,4 @@ reportWebVitals();
 
 // react에서 로딩창을 구현할때
 // 스니퍼라고하는 형태로 많이 구현한다. << 해당 혈태는 원이 빙글빙글 도는 애니메이션
-// -react에서 스니퍼 또는 로딩창 구현시 suspense / lazy 정도를 사용한다.
+// -react에서 스피너 또는 로딩창 구현시 suspense / lazy 정도를 사용한다.

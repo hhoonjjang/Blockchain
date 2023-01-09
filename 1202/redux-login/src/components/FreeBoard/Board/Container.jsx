@@ -14,7 +14,6 @@ const BoardContainer = () => {
   );
 
   const userName = useSelector((state) => state.userInfo.userName);
-  const commentUserName = useSelector((state) => state.comment.userName);
   const remove = () => {
     dispatch(action.remove(item.id));
     navigate("/");
